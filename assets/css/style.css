@@ -1,0 +1,553 @@
+/*----------------------------------------------------------------
+---------------------------------------------SCREEN SIZE: 1184 PX
+---------------------------------------------------------------*/
+
+/* ---------------------------------------- GENERAL PARAMETERS  */
+body {
+  font-family: "Trip Sans Reg";
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* ---------------------------------------------- colorimetry  */
+:root {
+  --text-color-salmon: #ff5d5d;
+  --text-color-black: black;
+  --text-color-grey: #333;
+  --text-color-white: white;
+
+  --background-white: white;
+  --background-black: black;
+  --background-ocre: #f9f1ec;
+
+  --border-color-black: black;
+}
+
+/* ------------------------------------------- style de titres  */
+h1 {
+  font-size: 54px;
+  font-family: "Trip Sans Med";
+  font-weight: 700;
+  margin: 0 0 16px 0;
+}
+
+h1 span {
+  color: var(--text-color-salmon);
+}
+
+h2 {
+  font-family: "Trip Sans Reg";
+  font-size: 28px;
+  font-weight: bold;
+  color: var (--text-color-black);
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+p {
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: inherit;
+  color: var(--text-color-grey);
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+nav {
+  display: flex;
+}
+/* ---------------------------------------------------- HEADER  */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  width: 200px;
+  height: 100%;
+}
+
+header nav {
+  align-items: center;
+}
+
+header button {
+  background-color: var(--background-color-white);
+  border: none;
+  height: 40px;
+  margin: 10px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.connect_button {
+  background-color: var(--background-black);
+  border-radius: 20px;
+  border: solid 1px var(--border-color-black);
+  color: var(--text-color-white);
+  margin-right: 0;
+}
+
+.menu-bars {
+  display: none;
+}
+
+.search {
+  display: none;
+}
+
+/* --------------------------------------------- header :hover  */
+header button:hover {
+  background-color: rgb(233, 230, 230);
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+.connect_button:hover {
+  opacity: 0.75;
+  transition: opacity 0.2s;
+  background-color: var(--background-black);
+}
+
+/* ------------------------------------------------------- MAIN  */
+
+/* ------------------------------------- main headband section  */
+#headband_section {
+  padding: 32px 0 24px 0;
+}
+
+#headband_section nav {
+  gap: 20px;
+}
+
+#headband_section button {
+  background-color: var(--background-white);
+  border: var(--border-color-black) 1px solid;
+  border-radius: 10px;
+  height: 68px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+
+#headband_section button:hover {
+  background-color: var(--background-black);
+  transition: background-color 0.3s;
+  color: var(--text-color-white);
+}
+
+/* ----------------------------main threesome-pictures section  */
+.threesome-pictures_section {
+  display: flex;
+  height: 430px;
+  gap: 2px;
+}
+
+.threesome-pictures_section img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.threesome-pictures_section img:hover {
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+/* -------------------------------------------------- left side  */
+.threesome-pictures_section .left_div {
+  width: 60%;
+  height: 100%;
+}
+
+.threesome-pictures_section .left_div img {
+  width: 100%;
+  height: 100%;
+}
+
+/* -------------------------------------------------- right side */
+.threesome-pictures_section .right_div {
+  display: flex;
+  flex-direction: column;
+  height: 99.5%;
+  width: 40%;
+  gap: 2px;
+}
+
+.threesome-pictures_section .right_div img {
+  width: 100%;
+  height: 50%;
+}
+
+/* ------------------------------main baseline-pictures section  */
+.baseline-pictures_section div {
+  display: flex;
+  font-size: 12px;
+  font-family: arial;
+  margin: 30px 0 30px 0;
+  gap: 10px;
+}
+
+.baseline-pictures_section a {
+  color: var(--text-color-grey);
+  text-decoration: none;
+}
+
+.baseline_p {
+  font-size: 12px;
+  color: var(--text-color-grey);
+  font-family: arial;
+  width: 5px;
+  margin-top: 0;
+}
+
+/* --------------------- baseline pictures section : hover  */
+.baseline-pictures_section a:hover {
+  text-decoration: underline;
+}
+
+/* ----------------------------------main informations section  */
+.informations_section {
+  margin-top: 50px;
+  width: 49%;
+}
+
+/* ----------------------------------- main carrousels section  */
+.carrousels_section {
+  margin: 64px 0;
+  /* display: flex; */
+}
+
+/* -------------------------------------------------- carrousel  */
+.carrousel_div {
+  display: flex;
+}
+.carrousel_div a {
+  color: var(--text-color-black);
+  font-family: "Trip Sans Med";
+  font-size: 16px;
+  display: flex;
+  margin-top: 20px;
+}
+/* -------------------------------------------------- infos  */
+.carrousel-info_div {
+  flex: 1;
+}
+
+/* -------------------------------------------------- scroll  */
+.carrousel-scroll_div {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  overflow-x: scroll;
+  gap: 16px;
+  height: 300px;
+  flex: 3;
+}
+
+.carrousel-scroll_div::-webkit-scrollbar {
+  display: none;
+}
+
+.carrousel-scroll_div .item {
+  width: 270px;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.carrousel-scroll_div .picture-container {
+  height: 70%;
+  width: 100%;
+  position: relative;
+}
+
+.carrousel-scroll_div .picture-container .picture_img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.pins-tripadvisor {
+  bottom: 20px;
+  left: 10px;
+  height: 50px;
+  width: 40px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: absolute;
+}
+
+.picture-container .fa-heart {
+  position: absolute;
+  top: 20px;
+  right: 16px;
+  color: var(--text-color-white);
+  font-size: 30px;
+}
+
+.item h4 {
+  margin-top: 10px;
+}
+
+/* ----------------------------------------------------- FOOTER  */
+footer {
+  background-color: var(--background-ocre);
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer h3 {
+  font-size: 16px;
+  margin-left: 20px;
+  margin-bottom: 0px;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--text-color-black);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer img {
+  height: 50px;
+}
+
+/*--------------------------------------------------------------
+-------------------------SCREEN SIZE container < screen < 1184 PX
+-----------------------------------------------------------------*/
+@media (max-width: 1184px) {
+  body {
+    background-color: brown;
+  }
+  .container {
+    margin: 0 20px;
+  }
+
+  /* -------------------------------------- threesome pictures  */
+  .threesome-pictures_section {
+    display: flex;
+    height: 276px;
+    gap: 2px;
+  }
+
+  /* -------------------------------------------------- left side  */
+  .threesome-pictures_section .left_div {
+    width: 70%;
+    height: 100%;
+  }
+
+  .threesome-pictures_section .left_div img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* -------------------------------------------------- right side */
+  .threesome-pictures_section .right_div {
+    display: flex;
+    flex-direction: column;
+    height: 99.5%;
+    width: 30%;
+    gap: 2px;
+  }
+
+  .threesome-pictures_section .right_div img {
+    width: 100%;
+    height: 50%;
+  }
+}
+
+/*--------------------------------------------------------------
+------------------------------------------SCREEN SIZE: max 1024 PX
+-----------------------------------------------------------------*/
+@media (max-width: 1024px) {
+  body {
+    background-color: yellow;
+  }
+  /* ----------------------------------------------------- header  */
+  header span {
+    display: none;
+  }
+
+  /* -------------------------------------------------- headband  */
+  #headband_section nav {
+    flex-wrap: wrap;
+  }
+
+  #headband_section button {
+    flex: 25%;
+  }
+
+  /* -------------------------------------- threesome pictures  */
+  .threesome-pictures_section {
+    display: flex;
+    height: 276px;
+    gap: 2px;
+  }
+
+  /* -------------------------------------------------- left side  */
+  .threesome-pictures_section .left_div {
+    width: 70%;
+    height: 100%;
+  }
+
+  .threesome-pictures_section .left_div img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* -------------------------------------------------- right side */
+  .threesome-pictures_section .right_div {
+    display: flex;
+    flex-direction: column;
+    height: 99.5%;
+    width: 30%;
+    gap: 2px;
+  }
+
+  .threesome-pictures_section .right_div img {
+    width: 100%;
+    height: 50%;
+  }
+
+  /* ----------------------------------main informations section  */
+  .informations_section {
+    margin-top: 50px;
+    width: 100%;
+  }
+}
+
+/*--------------------------------------------------------------
+-------------------------------------------SCREEN SIZE: max 768 PX
+-----------------------------------------------------------------*/
+@media (max-width: 768px) {
+  body {
+    background-color: blue;
+  }
+
+  /* ----------------------------------------------------- header*/
+  header.container {
+    margin-top: 10px;
+    justify-content: space-between;
+  }
+
+  header button {
+    display: none;
+  }
+
+  header img {
+    height: 30px;
+  }
+
+  .menu-bars {
+    display: initial;
+  }
+
+  .search {
+    display: initial;
+  }
+
+  .icon {
+    width: 20px;
+  }
+
+  /* ------------------------------------------------ headband  */
+  #headband_section .container {
+    margin-left: 20px;
+  }
+
+  #headband_section nav {
+    flex-wrap: nowrap;
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+
+  #headband_section button {
+    flex-shrink: 0;
+  }
+
+  #headband_section nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* -------------------------------------- threesome pictures  */
+  .threesome-pictures_section {
+    display: flex;
+    height: 276px;
+    gap: 2px;
+  }
+
+  /* -------------------------------------------------- left side  */
+  .threesome-pictures_section .left_div {
+    width: 100%;
+    height: 100%;
+  }
+
+  .threesome-pictures_section .left_div img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* -------------------------------------------------- right side */
+  .threesome-pictures_section .right_div {
+    display: none;
+  }
+  /* ------------------------------main baseline-pictures section  */
+  .baseline-pictures_section {
+    display: none;
+  }
+
+  /* ----------------------------------main informations section  */
+  .informations_section {
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  /* ----------------------------------- main carrousels section  */
+  /* -------------------------------------------------- carrousel  */
+  .carrousel_div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* -------------------------------------------------- scroll  */
+  .carrousel-scroll_div .item {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    overflow-x: scroll;
+    gap: 16px;
+    height: 500px;
+    /* background-color: saddlebrown; */
+    flex: 80%;
+    flex-shrink: 0;
+  }
+}
